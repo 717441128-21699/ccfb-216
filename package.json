@@ -1,0 +1,22 @@
+{
+  "name": "choir-align-mix",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --no-warnings tests/run-all.ts",
+    "test:fast": "node --experimental-strip-types --no-warnings tests/run-all.ts --fast",
+    "test:e2e": "node --experimental-strip-types --no-warnings tests/e2e/browser-e2e.ts",
+    "gen:test": "node --experimental-strip-types --no-warnings scripts/generate-test-audio.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^24.0.0",
+    "playwright": "^1.65.0",
+    "typescript": "^5.9.0",
+    "vite": "^6.3.0"
+  }
+}
